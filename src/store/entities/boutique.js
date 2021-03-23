@@ -15,7 +15,7 @@ const slice = createSlice({
             boutique.loading = true;
         },
         callFailed: (boutique, action) => {
-            error = action.payload;
+            boutique.error = action.payload;
             boutique.loading = false;
         },
         boutiqueLoaded: (boutique, action) => {
