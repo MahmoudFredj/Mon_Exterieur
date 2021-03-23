@@ -1,0 +1,10 @@
+.app-wrapper {
+  display: grid;
+  grid-template-rows: auto auto 1fr auto;
+  height: 100vh;
+}
+
+.app-wrapper header {
+  display: grid;
+  grid-template-columns: 1fr 1fr auto 1fr;
+}

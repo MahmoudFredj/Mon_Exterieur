@@ -1,0 +1,102 @@
+:root {
+  --primary: #f8f8f8;
+  --secondary: #653d36;
+  --text: #1f1f1f;
+  --prefix: #7daf3f;
+  --suffix: #b7b7b7;
+}
+
+body {
+  margin: 0;
+  background-color: var(--primary);
+}
+
+.app-wrapper > * {
+  border: solid 0.5px var(--suffix);
+}
+
+/* gen */
+
+/* end gen */
+
+/* header */
+
+.app-wrapper header .configuration {
+  background-color: var(--prefix);
+  color: var(--primary);
+  width: fit-content;
+}
+
+.app-wrapper header .configuration:hover {
+  background-color: var(--secondary);
+  cursor: pointer;
+}
+.app-wrapper header > * {
+  padding: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.app-wrapper header .markup {
+  color: var(--secondary);
+  cursor: pointer;
+}
+
+.app-wrapper header > *:hover .left {
+  opacity: 0;
+}
+.app-wrapper header > *:hover .right {
+  opacity: 1;
+}
+
+.app-wrapper header > *:hover label {
+  transform: translateX(-20px);
+}
+.app-wrapper header > *:hover input {
+  transform: translateX(-20px);
+}
+.app-wrapper header label {
+  cursor: pointer;
+  transition: 0.27s;
+}
+
+.app-wrapper header img {
+  width: 20px;
+  height: 20px;
+  margin: 0 5px;
+  transition: 0.2s;
+}
+
+.app-wrapper header .right {
+  opacity: 0;
+}
+.app-wrapper header .logo {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  font-family: arial;
+  font-size: 20px;
+  font-weight: bold;
+  color: var(--secondary);
+  letter-spacing: -0.5px;
+}
+.app-wrapper header .logo p {
+  margin: 0;
+}
+.app-wrapper header .logo p:first-child {
+  color: var(--prefix);
+}
+
+.app-wrapper .logo img {
+  width: 13px;
+  height: 13px;
+  margin-right: 0;
+}
+.app-wrapper header input {
+  border: none;
+  outline: none;
+  width: 100%;
+  transition: 0.27s;
+  background-color: var(--primary);
+}
+/* end header */
