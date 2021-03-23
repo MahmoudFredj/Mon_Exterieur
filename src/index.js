@@ -1,4 +1,4 @@
 import React from 'react';
 import ReactDOM from "react-dom";
-
-ReactDOM.render("Review demo", document.querySelector("#root"));
+import App from "./components/app";
+ReactDOM.render(<App />, document.querySelector("#root"));
