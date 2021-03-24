@@ -14,9 +14,6 @@
   height: 100px;
 }
 
-.app-wrapper > * {
-}
-
 /* gen */
 * {
   font-family: arial;
@@ -26,6 +23,11 @@ body {
   /* background-color: var(--primary); */
   background-color: var(--primary);
 }
+a {
+  text-decoration: none;
+  color: var(--text);
+}
+
 .head-content {
   /* position: absolute; */
   top: 45px;
@@ -39,24 +41,35 @@ body {
 .app-wrapper header {
   position: fixed;
   width: 100vw;
+  z-index: 33;
   top: 0;
 }
 .app-wrapper header .configuration {
   background-color: var(--prefix);
   color: var(--primary);
   width: fit-content;
+  height: 30px;
 }
 
 .app-wrapper header .configuration:hover {
   background-color: var(--secondary);
   cursor: pointer;
 }
-.app-wrapper header > * {
+.app-wrapper header > *:not(.not-me) {
   padding: 10px;
   border: solid 0.2px var(--exotic);
   display: flex;
   align-items: center;
   background-color: var(--primary);
+}
+.app-wrapper header .not-me {
+  background-color: var(--primary);
+}
+.app-wrapper header .configuration {
+  padding: 10px;
+  border: solid 0.2px var(--exotic);
+  display: flex;
+  align-items: center;
 }
 
 .app-wrapper header .markup {
@@ -133,6 +146,7 @@ body {
 .app-wrapper header .link {
   display: flex;
   align-items: center;
+  cursor: pointer;
   justify-content: center;
 }
 /* end header */
@@ -240,4 +254,51 @@ body {
 }
 
 /* end config section */
+
+/* realisation section */
+
+.realisation-panel img {
+  width: 100%;
+  z-index: -1;
+  position: relative;
+  transition: 0.27s;
+}
+
+.realisation-panel .content {
+  background-color: var(--exotic);
+}
+
+.realisation-panel .content h1 {
+  text-align: center;
+}
+.realisation-panel .background {
+  overflow: hidden;
+}
+.realisation-panel:hover img {
+  transform: scale(1.2);
+}
+
+.realisation-panel .content .off-content-right {
+  z-index: 10;
+  transform: translateX(20%);
+  background-color: var(--primary);
+  padding: 20px;
+}
+.realisation-panel:hover .content .off-content-right {
+  background-color: var(--prefix);
+  color: var(--primary);
+}
+
+.realisation-panel:hover .content .off-content-right article {
+  background-color: var(--prefix);
+  color: var(--primary);
+}
+
+.realisation-panel .content .off-content-right article {
+  background-color: var(--primary);
+  color: var(--suffix);
+}
+
+/* end realisation section */
+
 /* end home page */

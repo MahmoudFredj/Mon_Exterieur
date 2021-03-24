@@ -23,10 +23,12 @@ const Head = () => {
                 <img src={markup} alt="markup" className="right" />
             </div>
 
-            <div className="configuration">
-                <img src={fence} alt="fence" className="left" />
-                <label>Configuration</label>
-                <img src={fence} alt="fence" className="right" />
+            <div className="not-me">
+                <div className="configuration">
+                    <img src={fence} alt="fence" className="left" />
+                    <label>Configuration</label>
+                    <img src={fence} alt="fence" className="right" />
+                </div>
             </div>
 
             {/* menu */}

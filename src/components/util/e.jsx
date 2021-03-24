@@ -1,5 +1,4 @@
 import React from 'react';
-// <defs><style>.a{fill:#653d36;}.t{fill:#7daf3f;}</style></defs>
 const E = ({ className }) => {
     return (
         <svg
@@ -7,7 +6,7 @@ const E = ({ className }) => {
             width="42.09"
             height="62.734"
             viewBox="0 0 42.09 62.734"
-            class={className}
+            className={className}
         ><g
             transform="translate(-122.347 -60.728)"
         ><path

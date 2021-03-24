@@ -25,11 +25,18 @@
   height: 100px;
 }
 
-/* config section */
 .config-panel {
   display: grid;
   grid-template-columns: auto 1fr auto;
 }
 
-/* end config section */
+.realisation-panel {
+  display: grid;
+  grid-template-columns: 0.3fr 1fr;
+}
+
+.off-content-right {
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+}
 /* end home page */
