@@ -39,9 +39,9 @@ const HomePage = () => {
             </div>
             <div className="sections">
                 <ConfigSpace />
+                <Realisation />
                 <Instalation />
                 <Magasin />
-                <Realisation />
             </div>
         </div>);
 }

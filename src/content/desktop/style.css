@@ -301,4 +301,36 @@ a {
 
 /* end realisation section */
 
+/* instalation section */
+.instalation-panel {
+  padding: 50px;
+}
+
+.instalation-panel .example {
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.instalation-panel .example img {
+  transition: 0.27s;
+  position: relative;
+  z-index: -1;
+}
+.instalation-panel .example:hover img {
+  transform: scale(1.2);
+}
+.instalation-panel .example:hover .e {
+  opacity: 1;
+}
+.instalation-panel .example .e {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  fill: var(--primary);
+  transition: 0.27s;
+  opacity: 0;
+  transform: translate(-50%, -50%);
+}
+/* end instalation section */
 /* end home page */
