@@ -332,5 +332,66 @@ a {
   opacity: 0;
   transform: translate(-50%, -50%);
 }
+
 /* end instalation section */
+
+/* magasin section */
+.magasin-panel .background {
+  position: relative;
+  overflow: hidden;
+}
+.magasin-panel .background .e {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  transition: 0.27s;
+  fill: var(--primary);
+  opacity: 0;
+}
+.magasin-panel .background img {
+  transition: 0.27s;
+  position: relative;
+  z-index: -1;
+  width: 100%;
+}
+.magasin-panel .content {
+  text-align: left;
+  background-color: var(--exotic);
+}
+.magasin-panel .content img {
+  width: 40vw;
+  transition: 0.27s;
+}
+.magasin-panel .background {
+  position: relative;
+}
+.magasin-panel .off-content-left {
+  transform: translateX(-20%);
+  background-color: var(--primary);
+  overflow: hidden;
+}
+.magasin-panel .off-content-left .content {
+  background-color: var(--primary);
+}
+.magasin-panel .off-content-left .foot {
+  padding: 20px;
+  transition: 0.27s;
+}
+.magasin-panel:hover .background img {
+  transform: scale(1.2);
+}
+.magasin-panel:hover .background .e {
+  opacity: 1;
+}
+
+.magasin-panel:hover .off-content-left img {
+  transform: translateY(-20px);
+}
+
+.magasin-panel:hover .off-content-left .foot {
+  transform: translateY(-20px);
+}
+
+/* end magasin section */
 /* end home page */
