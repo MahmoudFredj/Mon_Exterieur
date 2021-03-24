@@ -4,7 +4,6 @@ import storeConfiguration from "../store/storeConfiguration";
 import Foot from './struct/foot';
 import Head from './struct/head';
 import { BrowserRouter, Switch, Route } from "react-router-dom";
-import MainMenu from './struct/mainMenu';
 import HomePage from "./homepage/homePage";
 import BoutiquePage from './boutique/boutiquePage';
 const store = storeConfiguration();
@@ -14,9 +13,8 @@ class App extends Component {
         return (
             <Provider store={store}>
                 <div className="app-wrapper">
-                    <Head />
                     <BrowserRouter>
-                        <MainMenu />
+                        <Head />
                         <Switch>
                             <Route path="/boutique" component={BoutiquePage} />
                             <Route exact path="/" component={HomePage} />

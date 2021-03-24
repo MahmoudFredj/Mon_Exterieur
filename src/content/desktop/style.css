@@ -4,23 +4,43 @@
   --text: #1f1f1f;
   --prefix: #7daf3f;
   --suffix: #b7b7b7;
+  --exotic: #e2e2e2;
 }
 
-body {
-  margin: 0;
-  background-color: var(--primary);
+/* test */
+.test-div {
+  background-color: var(--text);
+  width: 100vw;
+  height: 100px;
 }
 
 .app-wrapper > * {
-  border: solid 0.5px var(--suffix);
 }
 
 /* gen */
+* {
+  font-family: arial;
+}
+body {
+  margin: 0;
+  /* background-color: var(--primary); */
+  background-color: var(--primary);
+}
+.head-content {
+  /* position: absolute; */
+  top: 45px;
+  /* background-color: #653d36; */
+  z-index: -1;
+}
 
 /* end gen */
 
 /* header */
-
+.app-wrapper header {
+  position: fixed;
+  width: 100vw;
+  top: 0;
+}
 .app-wrapper header .configuration {
   background-color: var(--prefix);
   color: var(--primary);
@@ -33,8 +53,10 @@ body {
 }
 .app-wrapper header > * {
   padding: 10px;
+  border: solid 0.2px var(--exotic);
   display: flex;
   align-items: center;
+  background-color: var(--primary);
 }
 
 .app-wrapper header .markup {
@@ -99,4 +121,123 @@ body {
   transition: 0.27s;
   background-color: var(--primary);
 }
+
+.app-wrapper header #contacterNous {
+  width: fit-content;
+}
+.app-wrapper header #accueil {
+  width: fit-content;
+  justify-self: right;
+}
+
+.app-wrapper header .link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 /* end header */
+
+/* home page */
+
+.home-head img {
+  width: 98vw;
+}
+.home-head .sections {
+  padding: 0 20%;
+  margin-top: 20px;
+  cursor: pointer;
+}
+.home-head .sections > div {
+  position: relative;
+  z-index: 10;
+  height: 100px;
+  width: auto;
+  overflow: hidden;
+}
+.home-head .sections :hover .title {
+  background-color: var(--prefix);
+}
+
+.home-head .sections .title {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: var(--primary);
+  font-weight: bold;
+  transition: 0.27s;
+}
+
+.home-head .sections img {
+  z-index: -1;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+/* config section */
+.config-panel {
+  padding: 10px 100px;
+  color: var(--primary);
+  background-color: var(--secondary);
+  overflow: hidden;
+  cursor: pointer;
+}
+.config-panel img {
+  transition: 0.27s;
+}
+
+.config-panel:hover img:last-child {
+  transform: translateX(20px);
+}
+.config-panel img {
+  margin: 0 10px;
+  width: 40px;
+  height: auto;
+}
+.config-panel {
+  align-items: center;
+  position: relative;
+}
+
+.config-panel .config-svg {
+  transform: rotate(-20deg);
+  position: absolute;
+  width: 80px;
+  height: auto;
+}
+
+.config-panel .config-svg g {
+  fill: var(--prefix);
+  transition: 0.27s;
+}
+
+.config-panel:hover g {
+  fill: var(--secondary);
+}
+.config-panel > * {
+  z-index: 2;
+}
+
+.config-panel .background {
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  background-color: var(--prefix);
+  height: 0%;
+  z-index: 1;
+  transition: 0.27s;
+}
+.config-panel:hover .background {
+  height: 100%;
+}
+
+.config-space {
+  padding: 10px 10%;
+}
+
+/* end config section */
+/* end home page */
