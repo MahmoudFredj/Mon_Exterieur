@@ -37,7 +37,8 @@ const Head = () => {
             </div>
             <div className="link link-slider">
                 <div className="content"></div>
-                <div className="head">Boutique</div>
+                <div className="head">
+                    <Link to="/boutique">Boutique</Link></div>
             </div>
             <div className="link">
                 <Link to="/realisation">Nos Réalisation</Link>

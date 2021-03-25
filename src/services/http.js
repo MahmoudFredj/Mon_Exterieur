@@ -16,6 +16,7 @@ axios.interceptors.response.use(null, (error) => {
     return Promise.reject(error);
 })
 
+axios.defaults.headers.common["Content-Type"] = "application/json; charset=utf-8";
 
 // this is for another day if we are going to use token to use authentication :)
 export const setJWT = (jwt) => {

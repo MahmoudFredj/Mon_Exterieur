@@ -437,4 +437,59 @@ a {
 }
 
 /* end magasin section */
+
+/* boutique-page */
+.boutique-head {
+  background-color: var(--secondary);
+  padding: 80px 20%;
+  padding-bottom: 10px;
+}
+
+.boutique-head > h1 {
+  color: var(--prefix);
+}
+.boutique-head > label {
+  color: var(--suffix);
+}
+
+.boutique-page-wrapper .main-page-wrapper {
+  padding: 0 10%;
+  background-color: var(--exotic);
+}
+.boutique-page-wrapper .main-page-wrapper .config-space {
+  color: var(--primary);
+  background-color: var(--secondary);
+  overflow: hidden;
+  cursor: pointer;
+}
+.boutique-page-wrapper .main-page-wrapper .config-space article {
+  z-index: 1;
+  position: relative;
+  font-size: 12px;
+}
+.boutique-page-wrapper .main-page-wrapper .config-space .cnf-spc-e {
+  fill: var(--prefix);
+  transform: translateX(-20px) rotate(-20deg) scale(2);
+  position: relative;
+  z-index: 0;
+}
+.boutique-page-wrapper .main-page-wrapper .config-space .arrow {
+  float: right;
+  transition: 0.27s;
+}
+.boutique-page-wrapper .main-page-wrapper .config-space:hover .arrow {
+  transform: translateX(10px);
+}
+
+.boutique-page-wrapper .main-page-wrapper .side-menu {
+  background-color: var(--primary);
+}
+.boutique-page-wrapper .main-page-wrapper .main-content img {
+  width: 100%;
+  display: block;
+}
+.boutique-page-wrapper .main-page-wrapper .product {
+  background-color: var(--primary);
+}
+/* end boutique-page */
 /* end home page */
