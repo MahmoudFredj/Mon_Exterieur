@@ -19,8 +19,8 @@ class App extends Component {
                             <Route path="/boutique" component={BoutiquePage} />
                             <Route exact path="/" component={HomePage} />
                         </Switch>
+                        <Foot />
                     </BrowserRouter>
-                    <Foot />
                 </div>
             </Provider>
         );

@@ -151,6 +151,49 @@ a {
 }
 /* end header */
 
+/* footer */
+.app-wrapper footer {
+  padding: 10px;
+  border-top: solid 10px var(--prefix);
+}
+.app-wrapper footer .logo {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  font-family: arial;
+  align-items: flex-start;
+  font-size: 20px;
+  font-weight: bold;
+  color: var(--secondary);
+  letter-spacing: -0.5px;
+}
+.app-wrapper footer .logo p {
+  margin: 0;
+  font-size: 30px;
+  color: var(--secondary);
+}
+.app-wrapper footer .logo p:first-child {
+  color: var(--prefix);
+}
+.app-wrapper footer .logo img {
+  height: 35px;
+  margin-left: 10px;
+}
+
+.app-wrapper footer a,
+.app-wrapper footer p,
+.app-wrapper footer label {
+  color: var(--suffix);
+}
+.app-wrapper footer .lien-util a {
+  display: block;
+  margin: 10px 0;
+}
+
+.app-wrapper footer .lien-util a:hover {
+  color: var(--prefix);
+}
+/* end footer */
 /* home page */
 
 .home-head img {
