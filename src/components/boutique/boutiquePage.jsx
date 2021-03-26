@@ -6,6 +6,7 @@ import toolbox from "../../assets/029-toolbox.svg";
 import arrow from "../../assets/arrow-left-line-2.svg";
 import E from '../util/e';
 import Product from './product';
+import Paralax from '../util/paralex';
 class BoutiquePage extends Component {
     async componentDidMount() {
         console.log('pis');
@@ -15,10 +16,13 @@ class BoutiquePage extends Component {
     render() {
         return (
             <div className="boutique-page-wrapper">
-                <div className="head-content boutique-head">
+                {/* <div className="head-content boutique-head">
+
+                </div> */}
+                <Paralax className="head-content boutique-head">
                     <h1>Nos Produits</h1>
                     <label> Accueil{'>'}Boutique</label>
-                </div>
+                </Paralax>
                 <div className="main-page-wrapper">
                     <menu className="head-menu">
                         <Link className="active" to="#">Nouveautés</Link>

@@ -40,6 +40,26 @@ a {
 /* end gen */
 
 /* header */
+.main-menu-mech {
+  position: fixed;
+  top: 5px;
+  left: 5px;
+  z-index: 100;
+  display: none;
+}
+.m-m-c-l {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--primary);
+  background-color: var(--secondary);
+  font-size: 30px;
+  width: 50px;
+  height: 50px;
+  display: none;
+
+  border-radius: 50%;
+}
 .app-wrapper header {
   position: fixed;
   width: 100vw;
@@ -148,7 +168,9 @@ a {
 .app-wrapper header #contacterNous {
   width: fit-content;
 }
-
+#contacterNous .content *:not(img) {
+  padding: 10px;
+}
 .app-wrapper header .link {
   display: flex;
   align-items: center;
@@ -293,7 +315,9 @@ a {
 .app-wrapper footer {
   padding: 10px;
   border-top: solid 10px var(--prefix);
-  margin-top: 20px;
+  position: relative;
+  z-index: 10;
+  background-color: var(--primary);
 }
 .app-wrapper footer .logo {
   display: flex;
@@ -681,6 +705,8 @@ a {
 .boutique-page-wrapper .main-page-wrapper {
   padding: 20px 10%;
   background-color: var(--exotic);
+  position: relative;
+  z-index: 3;
 }
 .boutique-page-wrapper .main-page-wrapper .config-space {
   color: var(--primary);

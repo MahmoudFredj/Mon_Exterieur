@@ -1,7 +1,6 @@
 @media only screen and (max-width: 1030px) {
   .home-head .sections {
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
   }
   .realisation-panel {
     grid-template-columns: 0.6fr 1fr;

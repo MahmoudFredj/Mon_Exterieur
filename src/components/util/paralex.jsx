@@ -11,9 +11,10 @@ class Paralax extends Component {
     }
 
     handleScroll = (e) => {
-        console.log(window.pageYOffset)
+        const offset = window.pageYOffset;
         const para = this.parRef.current;
-        para.style.top = `${window.pageYOffset}px`;
+        if (offset < 600)
+            para.style.top = `${offset}px`;
     }
     render() {
         return (

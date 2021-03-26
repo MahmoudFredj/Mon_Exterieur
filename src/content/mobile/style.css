@@ -1,2 +1,84 @@
 @media only screen and (max-width: 620px) {
+  .app-wrapper header {
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    overflow-y: auto;
+    width: calc(100vw - (100vw - 100%));
+    background-color: var(--primary);
+    transition: 0.27s;
+    transform: translateX(-100%);
+  }
+  .app-wrapper header .configuration {
+    width: auto;
+  }
+  .app-wrapper header .configuration label {
+    width: 100%;
+  }
+  #contacterNous .head {
+    text-align: center;
+    padding: 20px;
+  }
+  .app-wrapper header > * {
+    padding: 20px 0;
+    display: block;
+  }
+  .app-wrapper header menu {
+    grid-area: menu;
+  }
+  .app-wrapper header menu {
+    display: block;
+  }
+  .app-wrapper header menu a {
+    text-align: center;
+    display: block;
+  }
+  .app-wrapper header menu .link {
+    display: block;
+  }
+  .home-head img {
+    width: 100%;
+  }
+  .instalation-panel {
+    padding: 0;
+  }
+  .realisation-panel .content {
+    position: relative;
+  }
+  .home-page-wrapper {
+    width: 100vw;
+  }
+  .config-space {
+    padding: 0;
+  }
+  .realisation-panel img {
+    height: 100%;
+    object-fit: cover;
+  }
+  .home-head .sections {
+    padding: 0;
+  }
+  .home-page-wrapper > .sections section {
+    margin: 50px 0;
+  }
+  .m-m-c-l {
+    display: flex;
+  }
+  #m-m-c:checked ~ header {
+    transform: translateX(0);
+  }
+  #m-m-c:checked + .m-m-c-l {
+    background: var(--prefix);
+  }
+  .boutique-page-wrapper .main-page-wrapper {
+    padding: 5px;
+  }
+  .boutique-page-wrapper .main-page-wrapper .config-space {
+    display: none;
+  }
+  .boutique-page-wrapper .head-menu a {
+    font-size: 12px;
+  }
 }

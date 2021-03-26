@@ -42,4 +42,7 @@
   .magasin-panel .background img {
     height: 100%;
   }
+  .config-panel {
+    padding: 10px;
+  }
 }
