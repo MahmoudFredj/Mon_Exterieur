@@ -6,7 +6,7 @@ const Foot = () => {
     return (
         <footer>
             <div className="logo">
-                <p>Mon</p> <img src={E} /><p>xterieur.fr</p>
+                <p>Mon</p> <img src={E} /><p>xtérieur.fr</p>
             </div>
             <div className="lien-util">
                 <h3>Lien Utiles</h3>

@@ -12,7 +12,7 @@ const Head = () => {
             <label className="main-menu-mech m-m-c-l" htmlFor="m-m-c">☰</label>
             <header>
                 <div className="logo">
-                    <p>Mon</p> <img src={E} /><p>xterieur.fr</p>
+                    <p>Mon</p> <img src={E} /><p>xtérieur.fr</p>
                 </div>
 
                 <div className="search">
