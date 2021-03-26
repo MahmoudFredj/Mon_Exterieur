@@ -9,10 +9,11 @@ import ConfigSpace from './sections/configSpace';
 import Instalation from './sections/instalation';
 import Magasin from './sections/magasin';
 import Realisation from './sections/realisation';
+import Paralax from '../util/paralex';
 const HomePage = () => {
     return (
         <div className="home-page-wrapper">
-            <div className="head-content home-head">
+            <Paralax className="head-content home-head">
                 <img src={headImg} alt="" />
                 <div className="sections">
                     <div>
@@ -36,7 +37,7 @@ const HomePage = () => {
                         <img src={gabion} alt="Gabion" />
                     </div>
                 </div>
-            </div>
+            </Paralax>
             <div className="sections">
                 <ConfigSpace />
                 <Realisation />

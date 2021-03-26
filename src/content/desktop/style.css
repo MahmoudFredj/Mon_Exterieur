@@ -55,13 +55,13 @@ a {
   background-color: var(--secondary);
   cursor: pointer;
 }
-.app-wrapper header > *:not(.not-me) {
-  padding: 10px;
+.app-wrapper header > *:not(.not-me):not(menu) {
   border: solid 0.2px var(--exotic);
   display: flex;
   align-items: center;
   background-color: var(--primary);
 }
+
 .app-wrapper header .not-me {
   background-color: var(--primary);
 }
@@ -76,7 +76,9 @@ a {
   color: var(--secondary);
   cursor: pointer;
 }
-
+.app-wrapper header a {
+  padding: 10px;
+}
 .app-wrapper header > *:hover .left {
   opacity: 0;
 }
@@ -87,15 +89,18 @@ a {
 .app-wrapper header > *:hover label {
   transform: translateX(-20px);
 }
-.app-wrapper header > *:hover input {
+.app-wrapper header > .search:hover input {
   transform: translateX(-20px);
 }
 .app-wrapper header label {
   cursor: pointer;
   transition: 0.27s;
 }
-
-.app-wrapper header img {
+.app-wrapper header > div {
+  position: relative;
+  z-index: 20;
+}
+.app-wrapper header .up img {
   width: 20px;
   height: 20px;
   margin: 0 5px;
@@ -135,12 +140,11 @@ a {
   background-color: var(--primary);
 }
 
+.markup label {
+  width: 100%;
+}
 .app-wrapper header #contacterNous {
   width: fit-content;
-}
-.app-wrapper header #accueil {
-  width: fit-content;
-  justify-self: right;
 }
 
 .app-wrapper header .link {
@@ -149,6 +153,132 @@ a {
   cursor: pointer;
   justify-content: center;
 }
+
+.app-wrapper header .link-slider div {
+  display: block;
+}
+.app-wrapper header .markup,
+.app-wrapper header .not-me {
+  text-align: center;
+}
+
+/* header menu */
+.app-wrapper header menu {
+  margin: 0;
+  background-color: transparent;
+  padding: 0 20%;
+}
+.app-wrapper header menu > * {
+  border: solid 0.5px var(--exotic);
+}
+.app-wrapper header menu .link {
+  background-color: var(--primary);
+  height: fit-content;
+  display: inline-block;
+}
+.app-wrapper header menu .link:not(.link-slider):not(.not-me) {
+  padding: 10px;
+}
+.app-wrapper header menu .link-slider .head {
+  padding: 10px;
+}
+.app-wrapper header menu .link a {
+  padding: 10px;
+}
+.app-wrapper header menu .link > a {
+  text-align: center;
+}
+.app-wrapper header menu .link:hover {
+  background-color: var(--prefix);
+}
+.app-wrapper header menu .link-slider * {
+  pointer-events: none;
+}
+.app-wrapper header menu .link-slider {
+  transition: 0.27s;
+  height: fit-content;
+}
+#contacterNous .content {
+  background-color: var(--primary);
+}
+#contacterNous .content input {
+  color: var(--suffix);
+  background-color: transparent;
+  border-bottom: solid 1px var(--suffix);
+}
+#contacterNous .content *:not(img) {
+  transition: 0.27s ease-in-out;
+  opacity: 0;
+  margin: 20px 0;
+  box-sizing: border-box;
+}
+#contacterNous.content {
+  padding: 10px;
+}
+#contacterNous:hover .content * {
+  opacity: 1;
+}
+#contacterNous .head {
+  position: relative;
+}
+#contacterNous p {
+  overflow-wrap: break-word;
+}
+#contacterNous:hover .head::before {
+  opacity: 1;
+}
+#contacterNous .head::before {
+  position: absolute;
+  top: 0;
+  color: var(--primary);
+  left: 0;
+  opacity: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  justify-self: center;
+  box-sizing: content-box;
+  background-color: var(--prefix);
+  content: 'Envoyer';
+}
+.app-wrapper header menu .link-slider .content {
+  max-height: 0;
+  transition: 1s;
+  position: relative;
+}
+.app-wrapper header menu .link-slider:hover .content {
+  max-height: 1000px;
+}
+.app-wrapper header menu .link-slider:hover .content a {
+  opacity: 1;
+}
+.app-wrapper header menu .link-slider .content a:hover {
+  background-color: var(--secondary);
+}
+.app-wrapper header menu .link-slider .content a {
+  display: block;
+  opacity: 0;
+  color: var(--primary);
+  transition: 0.5s;
+  padding: 20px;
+  position: relative;
+  z-index: 2;
+}
+.app-wrapper header menu .link-slider img {
+  max-height: inherit;
+  width: 100%;
+}
+.app-wrapper header menu .link-slider img:not(.not-me) {
+  height: 100%;
+  max-height: inherit;
+  width: 100%;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+}
+/* end header menu */
 /* end header */
 
 /* footer */
@@ -233,6 +363,12 @@ a {
   object-fit: cover;
   width: 100%;
   height: 100%;
+}
+
+.home-page-wrapper > .sections {
+  background-color: var(--primary);
+  position: relative;
+  z-index: 1;
 }
 
 /* config section */

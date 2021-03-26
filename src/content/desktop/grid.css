@@ -6,7 +6,17 @@
 
 .app-wrapper header {
   display: grid;
-  grid-template-columns: 1fr 1fr auto 1fr;
+  grid-template-columns: 1fr 2fr 1fr 1fr;
+  grid-template-areas:
+    '1 2 3 4'
+    'menu menu menu menu';
+}
+.app-wrapper header menu {
+  grid-area: menu;
+}
+.app-wrapper header menu {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
 }
 
 .app-wrapper footer {
