@@ -14,7 +14,6 @@ class Paralax extends Component {
         console.log(window.pageYOffset)
         const para = this.parRef.current;
         para.style.top = `${window.pageYOffset}px`;
-        para.style.position = "relative";
     }
     render() {
         return (

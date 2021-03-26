@@ -29,10 +29,12 @@ a {
 }
 
 .head-content {
-  /* position: absolute; */
-  top: 45px;
+  position: relative;
   /* background-color: #653d36; */
-  z-index: -1;
+  /* z-index: -1; */
+}
+.head-content .sections * {
+  position: relative;
 }
 
 /* end gen */
@@ -218,6 +220,12 @@ a {
 #contacterNous:hover .content * {
   opacity: 1;
 }
+#contacterNous:hover * {
+  pointer-events: all;
+}
+#boutique:hover * {
+  pointer-events: all;
+}
 #contacterNous .head {
   position: relative;
 }
@@ -285,6 +293,7 @@ a {
 .app-wrapper footer {
   padding: 10px;
   border-top: solid 10px var(--prefix);
+  margin-top: 20px;
 }
 .app-wrapper footer .logo {
   display: flex;
@@ -332,13 +341,14 @@ a {
 .home-head .sections {
   padding: 0 20%;
   margin-top: 20px;
-  cursor: pointer;
 }
+
 .home-head .sections > div {
   position: relative;
   z-index: 10;
   height: 100px;
   width: auto;
+  cursor: pointer;
   overflow: hidden;
 }
 .home-head .sections :hover .title {
@@ -368,7 +378,7 @@ a {
 .home-page-wrapper > .sections {
   background-color: var(--primary);
   position: relative;
-  z-index: 1;
+  z-index: 20;
 }
 
 /* config section */
@@ -446,6 +456,47 @@ a {
 .realisation-panel .content {
   background-color: var(--exotic);
 }
+.realisation-panel .content .foot {
+  background-color: var(--primary);
+  width: fit-content;
+  display: flex;
+  align-items: center;
+  justify-self: right;
+}
+.realisation-panel .content .foot > * {
+  display: inline;
+}
+.realisation-panel .content .foot img {
+  position: relative;
+  z-index: 2;
+  width: 20px;
+  padding: 10px;
+}
+.realisation-panel .min-pag {
+  max-width: 0;
+  transition: 0.27s;
+}
+.realisation-panel:hover .min-pag {
+  max-width: 500px;
+}
+.realisation-panel:hover .min-pag span {
+  opacity: 1;
+}
+.realisation-panel .min-pag .active {
+  background-color: var(--text);
+}
+.realisation-panel .min-pag span {
+  cursor: pointer;
+  border: solid 1px var(--text);
+  background-color: var(--suffix);
+  border-radius: 50%;
+  width: 5px;
+  height: 5px;
+  margin: 2px;
+  opacity: 0;
+  transition: 0.27s;
+  float: right;
+}
 
 .realisation-panel .content h1 {
   text-align: center;
@@ -453,7 +504,7 @@ a {
 .realisation-panel .background {
   overflow: hidden;
 }
-.realisation-panel:hover img {
+.realisation-panel:hover .background img {
   transform: scale(1.2);
 }
 
@@ -461,13 +512,24 @@ a {
   z-index: 10;
   transform: translateX(20%);
   background-color: var(--primary);
-  padding: 20px;
+}
+
+.realisation-panel .content .off-content-right > * {
+  padding: 10px;
 }
 .realisation-panel:hover .content .off-content-right {
   background-color: var(--prefix);
   color: var(--primary);
 }
-
+.realisation-panel .background {
+  position: relative;
+}
+.realisation-panel .content .off-content-right .content {
+  background-color: var(--primary);
+}
+.realisation-panel:hover .content .off-content-right .content {
+  background-color: var(--prefix);
+}
 .realisation-panel:hover .content .off-content-right article {
   background-color: var(--prefix);
   color: var(--primary);
@@ -483,6 +545,19 @@ a {
 /* instalation section */
 .instalation-panel {
   padding: 50px;
+}
+
+.instalation-panel .notice {
+  background-color: var(--secondary);
+  color: var(--primary);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+}
+
+.instalation-panel .notice h1 {
+  color: var(--prefix);
 }
 
 .instalation-panel .example {
@@ -502,7 +577,11 @@ a {
 .instalation-panel .example:hover .e {
   opacity: 1;
 }
-.instalation-panel .example .e {
+.realisation-panel:hover .background .e {
+  opacity: 1;
+}
+.instalation-panel .example .e,
+.realisation-panel .background .e {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -570,6 +649,17 @@ a {
 
 .magasin-panel:hover .off-content-left .foot {
   transform: translateY(-20px);
+}
+.magasin-panel:hover .foot .upper {
+  transform: translateY(100%);
+  opacity: 1;
+}
+.magasin-panel .foot .upper {
+  color: var(--prefix);
+  transition: 0.27s;
+  margin: 10px;
+  opacity: 0;
+  transform: translateY(200%);
 }
 
 /* end magasin section */
@@ -691,4 +781,5 @@ a {
   color: gray;
 }
 /* end boutique-page */
+
 /* end home page */

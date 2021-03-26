@@ -37,7 +37,7 @@ const Head = () => {
                 <div className="link" id="accueil">
                     <Link to="/">Accueil</Link>
                 </div>
-                <div className="link link-slider">
+                <div className="link link-slider" id="boutique">
                     <div className="content">
                         <Link>Lame commposite</Link>
                         <Link>Lame en bois</Link>

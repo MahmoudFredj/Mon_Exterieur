@@ -3,4 +3,8 @@ import ReactDOM from "react-dom";
 import App from "./components/app";
 import "./content/desktop/style.css";
 import "./content/desktop/grid.css";
+import "./content/tablet/style.css";
+import "./content/tablet/grid.css";
+import "./content/mobile/style.css";
+import "./content/mobile/grid.css";
 ReactDOM.render(<App />, document.querySelector("#root"));

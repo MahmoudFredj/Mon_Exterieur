@@ -1,5 +1,8 @@
 import React, { Component } from 'react';
 import background from "../../../assets/1e1fc50768fe089201a9d2f194ad33f1.png";
+import right from "../../../assets/arrow-left-line -r.svg";
+import left from "../../../assets/arrow-left-line-1.svg";
+import E from '../../util/e';
 const Realisation = () => {
     return (
         <section className="realisation-panel">
@@ -17,10 +20,19 @@ const Realisation = () => {
                             Cupiditate?
                         </article>
                     </div>
-                    <div className="foot">footer</div>
+                    <div className="foot">
+                        <img src={left} alt="left arrow" />
+                        <div className="min-pag">
+                            <span></span>
+                            <span className="active"></span>
+                            <span></span>
+                        </div>
+                        <img src={right} alt="right arrow" />
+                    </div>
                 </div>
             </div>
             <div className="background">
+                <E className="e" />
                 <img src={background} alt="too cool for school" />
             </div>
         </section>

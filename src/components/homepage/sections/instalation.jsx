@@ -9,14 +9,16 @@ const Instalation = () => {
     return (
         <section className="instalation-panel">
             <div className="notice">
-                <h3>Notice & Instalation</h3>
-                <article>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex tempore
-                    incidunt id at animi accusamus debitis? Velit nemo, perspiciatis delectus
-                    quibusdam deserunt laudantium. Id quo expedita repudiandae
-                    magnam quisquam labore!
+                <div className="container">
+                    <h1>Notice & Instalation</h1>
+                    <article>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex tempore
+                        incidunt id at animi accusamus debitis? Velit nemo, perspiciatis delectus
+                        quibusdam deserunt laudantium. Id quo expedita repudiandae
+                        magnam quisquam labore!
                 </article>
-                <div className="foot"></div>
+                    <div className="foot"></div>
+                </div>
             </div>
             <div className="example">
                 <E className="e" />

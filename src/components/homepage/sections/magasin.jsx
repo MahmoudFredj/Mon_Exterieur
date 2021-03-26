@@ -22,6 +22,7 @@ const Magasin = () => {
                         consectetur adipisicing elit. Minima laborum nulla dicta totam quas
                         voluptatem aliquam sequi eos sunt omnis cum quibusdam repellendus
                         tenetur atque ipsam, natus doloribus, tempore incidunt.
+                        <div className="upper">EN SAVOIR PLUS</div>
                     </div>
                 </div>
             </div>
