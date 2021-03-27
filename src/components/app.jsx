@@ -7,14 +7,12 @@ import { BrowserRouter, Switch, Route } from "react-router-dom";
 import HomePage from "./homepage/homePage";
 import BoutiquePage from './boutique/boutiquePage';
 import { setup } from "./util/canvas/setup";
-import Loading from './util/loading';
 const store = storeConfiguration();
 class App extends Component {
 
     render() {
         return (
             <Provider store={store}>
-                <Loading />
                 <div className="app-wrapper">
                     <BrowserRouter>
                         <Head />

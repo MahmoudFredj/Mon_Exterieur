@@ -20,6 +20,7 @@ const slice = createSlice({
         },
         boutiqueLoaded: (boutique, action) => {
             boutique.list = action.payload;
+            boutique.loading = false;
         }
     }
 });

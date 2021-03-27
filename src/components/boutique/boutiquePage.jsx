@@ -7,6 +7,7 @@ import arrow from "../../assets/arrow-left-line-2.svg";
 import E from '../util/e';
 import Product from './product';
 import Paralax from '../util/paralex';
+import Loading from "../util/loading";
 class BoutiquePage extends Component {
     async componentDidMount() {
         console.log('pis');
@@ -16,9 +17,9 @@ class BoutiquePage extends Component {
     render() {
         return (
             <div className="boutique-page-wrapper">
-                {/* <div className="head-content boutique-head">
-
-                </div> */}
+                {this.props.loading &&
+                    <Loading />
+                }
                 <Paralax className="head-content boutique-head">
                     <h1>Nos Produits</h1>
                     <label> Accueil{'>'}Boutique</label>

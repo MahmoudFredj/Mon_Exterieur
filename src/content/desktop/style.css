@@ -814,9 +814,46 @@ a {
 /* end home page */
 
 /* loading screen */
-.loading-screen-canvas {
+.loading-screen {
   position: fixed;
   left: 0;
   top: 0;
+  background-color: var(--primary);
+  width: 100vw;
+  height: 100vh;
+  z-index: 200;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.loading-screen .loader {
+  width: 50px;
+  height: 50px;
+  border: solid 4px var(--text);
+  border-radius: 50%;
+  outline: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: loading-animation 0.5s infinite alternate;
+}
+
+@keyframes loading-animation {
+  from {
+    box-shadow: 0 0 5px 0 var(--text);
+  }
+  to {
+    box-shadow: 0 0 50px 2px var(--text);
+  }
+}
+@keyframes loading-animation-span {
+  from {
+    transform: translateY(-20px);
+  }
+
+  to {
+    transform: translateY(20px);
+  }
 }
 /* end loading screen */
