@@ -42,11 +42,11 @@ const Head = () => {
                     </div>
                     <div className="link link-slider" id="boutique">
                         <div className="content">
-                            <Link>Lame commposite</Link>
-                            <Link>Lame en bois</Link>
-                            <Link>Panneau bois</Link>
-                            <Link>Grille rigide</Link>
-                            <Link>Gabion</Link>
+                            <Link to="/boutique">Lame commposite</Link>
+                            <Link to="/boutique">Lame en bois</Link>
+                            <Link to="/boutique">Panneau bois</Link>
+                            <Link to="/boutique">Grille rigide</Link>
+                            <Link to="/boutique">Gabion</Link>
                             <img src={sliderBackground} alt="background" />
                         </div>
                         <div className="head">
