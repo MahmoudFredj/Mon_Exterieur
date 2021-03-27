@@ -59,11 +59,13 @@ const Head = () => {
                     <div className="link link-slider" id="contacterNous">
                         <div className="content">
                             <img src={sliderBackground} alt="background" className="not-me" />
-                            <article>Hey! Pour toute informations ou suggestions,
+                            <div className="container">
+                                <article>Hey! Pour toute informations ou suggestions,
                              Merci de remplir le formulaire suivant</article>
-                            <input type="text" placeholder="Nom & Prénom" />
-                            <input type="text" placeholder="E-mail" />
-                            <input type="text" placeholder="Message" />
+                                <input type="text" placeholder="Nom & Prénom" />
+                                <input type="text" placeholder="E-mail" />
+                                <input type="text" placeholder="Message" />
+                            </div>
                         </div>
                         <div className="head">Contacter Nous</div>
                     </div>

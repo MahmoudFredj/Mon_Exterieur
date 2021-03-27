@@ -237,8 +237,10 @@ a {
 #contacterNous .content *:not(img) {
   transition: 0.27s ease-in-out;
   opacity: 0;
-  margin: 20px 0;
   box-sizing: border-box;
+}
+#contacterNous .content input {
+  margin: 10px 0;
 }
 #contacterNous.content {
   padding: 10px;
