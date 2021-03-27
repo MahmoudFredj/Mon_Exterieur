@@ -201,9 +201,12 @@ a {
   display: inline-block;
 }
 .app-wrapper header menu .link:not(.link-slider):not(.not-me) {
-  padding: 10px;
 }
-.app-wrapper header menu .link-slider .head {
+.app-wrapper header menu .link a {
+  display: block;
+}
+#contacterNous .head {
+  display: block;
   padding: 10px;
 }
 .app-wrapper header menu .link a {
@@ -809,3 +812,11 @@ a {
 /* end boutique-page */
 
 /* end home page */
+
+/* loading screen */
+.loading-screen-canvas {
+  position: fixed;
+  left: 0;
+  top: 0;
+}
+/* end loading screen */
