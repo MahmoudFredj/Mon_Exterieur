@@ -8,7 +8,7 @@ class Product extends Component {
             <div className="product">
                 <img src={this.props.value.picture} alt="product-img" />
                 <p>{this.props.value.product_name}</p>
-                <label>{this.props.value.price}</label>
+                <label>{this.props.value.price} ML</label>
                 <Link to="#">Voire Detail <img className="arw-link-prdct" src={arrow} alt="arrow" /></Link>
 
             </div>

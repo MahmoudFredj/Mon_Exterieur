@@ -763,6 +763,13 @@ a {
 .boutique-page-wrapper .main-page-wrapper .product > * {
   transition: 0.27s;
 }
+.boutique-page-wrapper .main-page-wrapper .product > *:not(img) {
+  padding: 5px 10px;
+  margin: 0;
+}
+.boutique-page-wrapper .main-page-wrapper .product > label {
+  color: var(--suffix);
+}
 .boutique-page-wrapper .main-page-wrapper .product a {
   color: var(--prefix);
   opacity: 0;
