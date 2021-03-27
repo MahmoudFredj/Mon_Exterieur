@@ -22,6 +22,7 @@ body {
   margin: 0;
   /* background-color: var(--primary); */
   background-color: var(--primary);
+  overflow-x: hidden;
 }
 a {
   text-decoration: none;
@@ -409,6 +410,9 @@ a {
   background-color: var(--primary);
   position: relative;
   z-index: 20;
+}
+.home-page-wrapper > .sections > section {
+  margin: 50px 0;
 }
 
 /* config section */

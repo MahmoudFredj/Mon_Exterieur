@@ -25,6 +25,9 @@
     padding: 20px 0;
     display: block;
   }
+  body {
+    overflow-x: hidden;
+  }
   .app-wrapper header menu {
     grid-area: menu;
   }
@@ -80,5 +83,23 @@
   }
   .boutique-page-wrapper .head-menu a {
     font-size: 12px;
+  }
+  .magasin-panel .off-content-left {
+    transform: translateX(0px);
+  }
+  .magasin-panel .off-content-left img {
+    object-fit: cover;
+    width: 100%;
+  }
+  .realisation-panel .content .off-content-right {
+    transform: translateX(0px);
+  }
+  .realisation-panel .content h1 {
+    padding: 10px 0;
+  }
+  .magasin-panel .content h1 {
+    padding: 10px 0;
+    text-align: center;
+    margin: 0;
   }
 }

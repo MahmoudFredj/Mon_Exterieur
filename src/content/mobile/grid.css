@@ -30,4 +30,18 @@
     grid-gap: 10px;
     gap: 10px;
   }
+  .magasin-panel {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr auto;
+    grid-template-areas:
+      'content'
+      'background';
+  }
+  .realisation-panel {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr auto;
+  }
+  .magasin-panel > .content {
+    grid-area: content;
+  }
 }
