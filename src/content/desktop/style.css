@@ -82,6 +82,7 @@ a {
   display: flex;
   align-items: center;
   background-color: var(--primary);
+  padding: 5px;
 }
 
 .app-wrapper header .not-me {
