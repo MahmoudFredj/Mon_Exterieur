@@ -230,6 +230,11 @@ a {
 #contacterNous .content {
   background-color: var(--primary);
 }
+#contacterNous .content article {
+  font-size: 12px;
+  font-weight: bold;
+  color: var(--secondary);
+}
 #contacterNous .content input {
   color: var(--suffix);
   background-color: transparent;
