@@ -4,7 +4,7 @@ import saw from "../../../assets/image.png";
 import E from '../../util/e';
 const Magasin = () => {
     return (
-        <section className="magasin-panel">
+        <section id="magasin" className="magasin-panel">
             <div className="background">
 
                 <E className="e" />

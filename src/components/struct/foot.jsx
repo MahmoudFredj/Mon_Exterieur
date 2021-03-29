@@ -10,10 +10,10 @@ const Foot = () => {
             </div>
             <div className="lien-util">
                 <h3>Lien Utiles</h3>
-                <Link to="/#config"> Configurateur</Link>
-                <Link to="/#magasin">Notre Magasin</Link>
-                <Link to="/#instalation">Notice et installation</Link>
-                <Link to="/#Livraison">Livraison transport</Link>
+                <a href="/#config"> Configurateur</a>
+                <a href="/#magasin">Notre Magasin</a>
+                <a href="/#instalation">Notice et installation</a>
+                <a href="/#Livraison">Livraison transport</a>
             </div>
             <div className="contact">
                 <h3>Nous Contacter</h3>

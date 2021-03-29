@@ -7,7 +7,7 @@ import fourth from "../../../assets/f27f6de5647a9ecb5588ec65948ed071.png";
 import fifth from "../../../assets/cc7e9c70feb22a4d36281429e5b05797.png";
 const Instalation = () => {
     return (
-        <section className="instalation-panel">
+        <section id="instalation" className="instalation-panel">
             <div className="notice">
                 <div className="container">
                     <h1>Notice & Instalation</h1>

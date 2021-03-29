@@ -4,7 +4,7 @@ import fence from "../../../assets/008-fence-1.svg";
 import E from '../../util/e';
 const ConfigSpace = () => {
     return (
-        <section className="config-space">
+        <section id="config" className="config-space">
             <div className="config-panel">
                 <div className="background"></div>
                 <E className="config-svg" />
