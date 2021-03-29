@@ -170,6 +170,7 @@ a {
 .app-wrapper header #contacterNous {
   width: fit-content;
 }
+
 #contacterNous .content *:not(img) {
   padding: 10px;
 }
@@ -227,6 +228,7 @@ a {
   transition: 0.27s;
   height: fit-content;
 }
+
 #contacterNous .content {
   background-color: var(--primary);
 }
@@ -287,11 +289,14 @@ a {
 }
 .app-wrapper header menu .link-slider .content {
   max-height: 0;
-  transition: 1s;
+  transition: 0.5s;
   position: relative;
 }
 .app-wrapper header menu .link-slider:hover .content {
   max-height: 1000px;
+}
+.app-wrapper header menu .link-slider:hover img {
+  opacity: 1;
 }
 .app-wrapper header menu .link-slider:hover .content a {
   opacity: 1;
@@ -849,30 +854,43 @@ a {
 .loading-screen .loader {
   width: 50px;
   height: 50px;
-  border: solid 4px var(--text);
+  border: solid 4px var(--prefix);
   border-radius: 50%;
   outline: none;
   display: flex;
   justify-content: center;
   align-items: center;
-  animation: loading-animation 0.5s infinite alternate;
+  position: relative;
+  animation: loading-animation 0.5s infinite alternate linear;
+}
+
+.loading-screen .loader:after {
+  position: absolute;
+  border: solid 4px var(--secondary);
+  content: '';
+  height: 50%;
+  width: 50%;
+  border-radius: 50%;
+  animation: loading-animation-span 0.5s infinite alternate linear;
 }
 
 @keyframes loading-animation {
   from {
-    box-shadow: 0 0 5px 0 var(--text);
+    box-shadow: 0 0 100px 100px var(--prefix);
   }
   to {
-    box-shadow: 0 0 50px 2px var(--text);
+    box-shadow: 0 0 0px 0 var(--prefix);
   }
 }
 @keyframes loading-animation-span {
   from {
-    transform: translateY(-20px);
+    transform: scale(0.2) rotate(0deg);
+    border-radius: 0;
   }
 
   to {
-    transform: translateY(20px);
+    transform: scale(5) rotate(360deg);
+    border-radius: 50%;
   }
 }
 /* end loading screen */
