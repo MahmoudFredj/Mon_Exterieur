@@ -4,6 +4,7 @@ class Paralax extends Component {
     parRef = React.createRef();
     componentDidMount() {
         window.addEventListener("scroll", this.handleScroll);
+        this.maxheight = window.screen.height - 200;
     }
 
     componentWillUnmount() {
@@ -13,7 +14,7 @@ class Paralax extends Component {
     handleScroll = (e) => {
         const offset = window.pageYOffset;
         const para = this.parRef.current;
-        if (offset < 600)
+        if (offset < this.maxheight)
             para.style.top = `${offset}px`;
     }
     render() {

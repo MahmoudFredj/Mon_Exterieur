@@ -395,8 +395,14 @@ a {
   cursor: pointer;
   overflow: hidden;
 }
+.home-head .sections img {
+  transition: 0.27s;
+}
 .home-head .sections :hover .title {
   background-color: var(--prefix);
+}
+.home-head .sections :hover img {
+  transform: scale(1.3);
 }
 
 .home-head .sections .title {
@@ -619,6 +625,7 @@ a {
   z-index: -1;
 }
 .instalation-panel .example:hover img {
+  filter: blur(1.4px);
   transform: scale(1.2);
 }
 .instalation-panel .example:hover .e {
