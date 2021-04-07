@@ -622,6 +622,7 @@ a {
 .instalation-panel .example img {
   transition: 0.27s;
   position: relative;
+  width: 100%;
   z-index: -1;
 }
 .instalation-panel .example:hover img {
@@ -904,3 +905,8 @@ a {
   }
 }
 /* end loading screen */
+@media only screen and (min-width: 2048px) {
+  * {
+    font-size: xx-large;
+  }
+}
